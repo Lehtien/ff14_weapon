@@ -6,7 +6,7 @@ defineProps({
 })
 
 const getUrl = (imageId) => {
-  const url  = `../../src/assets/weapon_image/${imageId}`
+  const url  = `/weapon_image/${imageId}`
   return new URL(url, import.meta.url).href
 }
 
