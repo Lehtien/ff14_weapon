@@ -29,6 +29,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/ast">占星術師</RouterLink>
         <RouterLink to="/sge">賢者</RouterLink>
       </nav>
+      <p>(C) SQUARE ENIX CO., LTD. All Rights Reserved.</p>
     </div>
   </header>
 
@@ -68,6 +69,9 @@ nav a {
   border-left: 1px solid var(--color-border);
 }
 
+.wrapper p {
+text-align: right;
+}
 /* nav a:first-of-type {
   border: 0;
 } */
