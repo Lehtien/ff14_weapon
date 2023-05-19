@@ -1,18 +1,20 @@
 
 <script setup>
-const props = defineProps({
+defineProps({
   imageId: String,
   name: String
 })
 
-const url  = `../assets/weapon_image/${props.imageId}`
-console.log(url)
-const src = new URL(url, import.meta.url).href
+const getUrl = (imageId) => {
+  const url  = `.././assets/weapon_image/${imageId}`
+  return new URL(url, import.meta.url).href
+}
+
 
 </script>
 <template>
   <div class="card">
-    <img :src=src />
+    <img :src=getUrl(imageId) />
     <p>{{ name }}</p>
   </div>
 </template>
