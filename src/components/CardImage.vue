@@ -13,14 +13,15 @@ const getUrl = (imageId) => {
 
 </script>
 <template>
-  <div class="card">
+  <a :href=getUrl(imageId) target="_blank" class="card">
     <img :src=getUrl(imageId) />
     <p>{{ name }}</p>
-  </div>
+  </a>
 </template>
 
 <style lang="scss" scoped>
 .card {
+  display: block;
   width: 100%;
   padding: 1em;
 
